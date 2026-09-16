@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Warung</title>
+    <style>
+        body {
+            background-color: #f4f4f4; /* warna hex */
+            padding: 20px;
+        }
+
+        /* grouping selector nih */
+        h1, h2 {
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        h1 {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            text-align: center;
+            color: chocolate; /* warna pake nama (color name) */
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 16px;
+            color: #555555; 
+            font-weight: normal;
+        }
+
+        .kotak-menu {
+            max-width: 400px;
+            margin: 20px auto;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        /* descendant selector */
+        .kotak-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .kotak-menu ul li {
+            padding: 12px 10px;
+            border-bottom: 1px dashed #ccc;
+            display: flex;
+            justify-content: space-between;
+            font-family: sans-serif;
+        }
+
+        /* pseudo-class hover */
+        .kotak-menu ul li:hover {
+            background-color: #ffebcd; 
+            color: crimson; 
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Warung Makan Mantap</h1>
+    <h2>Daftar Menu Harian</h2>
+
+    <div class="kotak-menu">
+        <ul>
+            <li><span>Nasi Goreng Gila</span> <span>Rp 18.000</span></li>
+            <li><span>Indomie Dok-Dok</span> <span>Rp 12.000</span></li>
+            <li><span>Ayam Geprek</span> <span>Rp 15.000</span></li>
+            <li><span>Tahu Tempe Penyet</span> <span>Rp 10.000</span></li>
+            <li><span>Es Teh Jumbo</span> <span>Rp 4.000</span></li>
+            <li><span>Kopi Hitam</span> <span>Rp 5.000</span></li>
+        </ul>
+    </div>
+
+</body>
+</html>
